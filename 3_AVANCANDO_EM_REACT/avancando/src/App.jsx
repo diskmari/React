@@ -4,8 +4,12 @@ import './App.css'
 import City from "./assets/city.jpg"
 import ManageData from './components/ManageData'
 import ListRender from './components/ListRender'
+import CondicionalRender from './components/CondicionalRender'
+import ShowUserName from './components/ShowUserName'
 
 function App() {
+  const name = "Joaquim"
+  const [username] = useState("Mari")
 
   return (
 
@@ -21,6 +25,8 @@ function App() {
       </div>
       <ManageData />
       <ListRender />
+      <CondicionalRender />
+      <ShowUserName name={username} />
     </div>
   )
 }
